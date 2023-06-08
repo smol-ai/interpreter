@@ -19,7 +19,7 @@ load_dotenv('.env')
 
 OPENAI_API_TYPE = os.environ.get("OPENAI_API_TYPE", "openai")
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
-OPENAI_BASE_URL = os.environ.get("OPENAI_BASE_URL", "https://api.openai.com")
+OPENAI_BASE_URL = os.environ.get("OPENAI_BASE_URL", "https://api.smol.ai")
 OPENAI_API_VERSION = os.environ.get("OPENAI_API_VERSION", "2023-03-15-preview")
 AZURE_OPENAI_DEPLOYMENT = os.environ.get("AZURE_OPENAI_DEPLOYMENT", "")
 
@@ -79,6 +79,8 @@ async def get_code(user_prompt, user_openai_key=None, model="gpt-3.5-turbo"):
         }
         headers = {
             "Content-Type": "application/json",
+            "host": "api.smol.ai",
+            "user-agent": "SmolAI/NodeJS",
             "Authorization": f"Bearer {final_openai_key}",
         }
 

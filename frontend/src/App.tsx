@@ -16,6 +16,14 @@ function App() {
   const COMMANDS = ["reset"];
   const MODELS = [
     {
+      displayName: "Claude-V1-100k",
+      name: "claude-v1-100k",
+    },
+    {
+      displayName: "Claude-instant-V1",
+      name: "claude-instant-v1",
+    },
+    {
       displayName: "GPT-3.5",
       name: "gpt-3.5-turbo",
     },
