@@ -19,7 +19,15 @@ setup(
         'requests>=2,<3',
         'Flask>=2,<3',
         'flask-cors>=3,<4',
-        'python-dotenv>=1,<2'
+        'python-dotenv>=1,<2',
+        'numpy',
+        'matplotlib',
+        'pandas',
+        'PyPDF2',
+        'pdfminer',
+        'pdfplumber',
+        'camelot',
+        'dateparser'
     ],
     entry_points={
         'console_scripts': [

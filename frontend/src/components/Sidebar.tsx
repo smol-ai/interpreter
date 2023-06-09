@@ -1,5 +1,6 @@
-import AssistantIcon from '@mui/icons-material/Assistant';
+// import AssistantIcon from '@mui/icons-material/Assistant';
 
+import { useState } from "react";
 import "./Sidebar.css";
 
 export default function Sidebar(props: {
@@ -15,16 +16,14 @@ export default function Sidebar(props: {
       props.setOpenAIKey(key);
     }
   };
+  const [reveal, setReveal] = useState(true);
   return (
     <>
-      <div className="sidebar">
+      <div className={reveal ? "sidebar" : 'smolbar'}>
         <div className="logo">
-          🐣 Smol Talk!
-
-            <div className='github'>
-                <a href='https://github.com/ricklamers/gpt-code-ui'>Open Source - v{import.meta.env.VITE_APP_VERSION}</a>
-            </div>
+          <button onClick={() => setReveal(!reveal)}>🐣</button> {reveal && "Smol Talk!"}
         </div>
+        {reveal && (
         <div className="settings">
             <label className="header">Settings</label>
             <label>Model</label>
@@ -41,8 +40,9 @@ export default function Sidebar(props: {
             })}
             </select>
             <label>Credentials</label>
-            <button onClick={handleOpenAIButtonClick}>Set OpenAI key</button>
+            <button className="button" onClick={handleOpenAIButtonClick}>Set OpenAI key</button>
         </div>
+        )}
       </div>
     </>
   );
