@@ -20,14 +20,14 @@ setup(
         'Flask>=2,<3',
         'flask-cors>=3,<4',
         'python-dotenv>=1,<2',
-        'numpy',
-        'matplotlib',
+        'numpy', # numpy==1.24.3
+        'matplotlib', # matplotlib==3.7.1
         'pandas',
-        'PyPDF2',
-        'pdfminer',
-        'pdfplumber',
-        'camelot',
-        'dateparser'
+        'PyPDF2', # PyPDF2==3.0.1
+        'pdfminer', # pdfminer==20191125
+        'pdfplumber', # pdfplumber==0.9.0
+        'camelot', # Camelot==12.6.29
+        'dateparser' #dateparser==1.1.8
     ],
     entry_points={
         'console_scripts': [
