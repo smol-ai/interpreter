@@ -18,5 +18,5 @@ __pycache__/
 # Logs
 *.log
 
-dist/
+/dist/
 build/
