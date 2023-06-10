@@ -51,13 +51,8 @@ def print_color(text, color="gray"):
 
 
 def print_banner():
-        
-        print("""
-█▀▀ █▀█ ▀█▀ ▄▄ █▀▀ █▀█ █▀▄ █▀▀
-█▄█ █▀▀ ░█░ ░░ █▄▄ █▄█ █▄▀ ██▄
-        """)
 
-        print("> Open GPT-Code UI in your browser %s" % APP_URL)
+        print("> Open smol talk in your browser %s" % APP_URL)
         print("")
         print("You can inspect detailed logs in app.log.")
         print("")
