@@ -179,6 +179,7 @@ function App() {
       },
       body: JSON.stringify({
         prompt: `File "${filename}" was uploaded successfully.`,
+        filename
       }),
     })
       .then(() => {})

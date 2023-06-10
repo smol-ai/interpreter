@@ -22,12 +22,13 @@ setup(
         'python-dotenv>=1,<2',
         'numpy', # numpy==1.24.3
         'matplotlib', # matplotlib==3.7.1
-        'pandas',
+        'pandas', # matplotlib==1.5.3
         'PyPDF2', # PyPDF2==3.0.1
         'pdfminer', # pdfminer==20191125
         'pdfplumber', # pdfplumber==0.9.0
         'camelot', # Camelot==12.6.29
-        'dateparser' #dateparser==1.1.8
+        'dateparser' # dateparser==1.1.8
+        'geopandas' # geopandas==0.13.2
     ],
     entry_points={
         'console_scripts': [
