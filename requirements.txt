@@ -1,2 +1,2 @@
 gunicorn==20.1.0
-sqlalchemy-migrate==0.13.0
+sqlalchemy-migrate==0.10.0
